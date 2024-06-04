@@ -38,12 +38,15 @@ boxes.forEach((box) => {
         count++;
 
         let isWinner=checkWinner();
-
-        if(count === 9 && !isWinner){
-            drawGame();
-        }
-       
+    
         });
+
+        if(count === 9 ){
+            if(!isWinner){
+                drawGame();
+            }
+            
+        }
 });
 
 const drawGame = () => {
