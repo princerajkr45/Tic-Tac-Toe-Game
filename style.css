@@ -1,4 +1,4 @@
- * {
+* {
     margin: 0;
     padding: 0;
 }
@@ -19,7 +19,6 @@ h1 {
     height: 50vh;
     width: 50vh;
     padding: 1rem;
-
 }
 
 .game {
@@ -61,5 +60,89 @@ h1 {
 
 .hide {
     display: none;
+}
 
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .container {
+        height: 60vh;
+        width: 60vh;
+    }
+
+    .box {
+        height: 28%;
+        width: 28%;
+        font-size: 3rem;
+    }
+
+    #btn {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    .msg {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        height: 70vh;
+        width: 70vh;
+    }
+
+    .box {
+        height: 25%;
+        width: 25%;
+        font-size: 2.5rem;
+    }
+
+    #btn {
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+
+    .msg {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .game{
+        width: 350px;
+        height: 500px;
+        padding: 0px;
+    }
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        height: 60vh;
+        width: 70vw;
+    }
+
+    .box {
+        height: 20%;
+        width: 25%;
+        font-size: 2.5rem;
+    }
+
+    #btn {
+        /* padding: 6px; */
+        font-size: 0.8rem;
+        margin-top: 15px;
+    }
+
+    .msg {
+        font-size: 1rem;
+    }
 }
